@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>FireGolem</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <!-- Set this to your Blade & Sorcery install, e.g. -->
+    <!-- C:/Program Files (x86)/Steam/steamapps/common/Blade & Sorcery -->
+    <BasGameDir Condition="'$(BasGameDir)' == ''">C:/Program Files (x86)/Steam/steamapps/common/Blade &amp; Sorcery</BasGameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Game + Unity assemblies. Paths resolve against BasGameDir. -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(BasGameDir)/BladeAndSorcery_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(BasGameDir)/BladeAndSorcery_Data/Managed/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(BasGameDir)/BladeAndSorcery_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(BasGameDir)/BladeAndSorcery_Data/Managed/UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

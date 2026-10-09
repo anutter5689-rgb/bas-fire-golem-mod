@@ -1,0 +1,12 @@
+{
+  "Name": "Fire Golem - Dalgarian Variant",
+  "Author": "Pix",
+  "ModVersion": "0.1.0",
+  "GameVersion": "1.0",
+  "Description": "Fire-elemental Dalgarian golem: fireball projectiles, lingering ground fire, periodic special ability, remixed attack combos. PCVR scripted mod.",
+  "Assemblies": [
+    {
+      "Fullname": "FireGolem.dll"
+    }
+  ]
+}
