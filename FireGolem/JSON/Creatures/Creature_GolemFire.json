@@ -1,0 +1,15 @@
+// COPY-from-vanilla template. Open bas.jsondb (it's a zip), find the
+// Dalgarian golem's creature JSON, and copy each COPY field over.
+// Then delete this comment (JSON comments are NOT valid in-game).
+{
+  "$type": "ThunderRoad.CreatureData, Assembly-CSharp",
+  "id": "GolemFire",
+  "pooledCount": 0,
+  "prefabAddress": "COPY from vanilla golem",
+  "containerID": "COPY",
+  "brainID": "Brain_GolemFire",
+  "factionId": "COPY",
+  "height": "COPY, then ~x1.1",
+  "health": "COPY, then ~x1.25",
+  "ethnicGroups": []
+}

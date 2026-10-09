@@ -1,0 +1,15 @@
+// Clone of the vanilla golem brain, remixed for the fire variant.
+// COPY the whole vanilla golem brain JSON here, then adjust:
+//
+//  - RAISE the weight/frequency of the golem's ranged boulder throw
+//    (this is the animation the fireballs pair with).
+//  - RAISE chain/combo weights so melee strings run longer before
+//    the golem pauses.
+//  - LOWER idle/taunt weights slightly - the fire golem is restless.
+//
+// Send Pix the vanilla brain JSON and this file gets filled in for real.
+// (Delete these comments before use - JSON comments are NOT valid in-game.)
+{
+  "$type": "ThunderRoad.BrainData, Assembly-CSharp",
+  "id": "Brain_GolemFire"
+}
